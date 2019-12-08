@@ -1,0 +1,31 @@
+{
+  "name": "yarn",
+  "installationMethod": "msi",
+  "version": "1.16.0",
+  "license": "BSD-2-Clause",
+  "preferGlobal": true,
+  "description": "📦🐈 Fast, reliable, and secure dependency management.",
+  "resolutions": {
+    "sshpk": "^1.14.2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": "yarnpkg/yarn",
+  "bin": {
+    "yarn": "./bin/yarn.js",
+    "yarnpkg": "./bin/yarn.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "nodejs-websocket": "^1.7.2",
+    "socket.io": "^2.2.0",
+    "socketio": "^1.0.0"
+  }
+}

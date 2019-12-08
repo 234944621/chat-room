@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    　　<title>玖茜聊天室</title>
+        <meta http-equiv="Content-Type" charset=utf-8" />
+       <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+      <div class="login" style="display: block"><h3 style="margin-left:125px;">用户登录</h3>
+      <p>&nbsp&nbsp用户名:&nbsp&nbsp<input type="text" placeholder="请输入用户名" id="username"></p> 
+      <p>&nbsp&nbsp密 码:&nbsp&nbsp<input type="text" placeholder="请输入密码" id="password"></p> 
+      <p>&nbsp&nbsp选择头像</p>
+      <ul class="avatar" id="login_avatar">
+        <li class="now"><img src="images/卡通头像1.jpg"></li>
+        <li><img src="images/卡通头像2.jpg"></li>
+        <li><img src="images/卡通头像3.jpg"></li>
+        <li><img src="images/卡通头像4.jpg"></li>
+        <li><img src="images/卡通头像5.jpg"></li>
+        <li><img src="images/卡通头像6.jpg"></li>
+        <li><img src="images/卡通头像7.jpg"></li>
+        <li><img src="images/卡通头像8.jpg"></li>
+      </ul>
+      <div class="bt"><button id="login_Btn" style="  background-color: rgba(28,130,64,0.7);">&nbsp&nbsp&nbsp&nbsp登陆&nbsp&nbsp&nbsp&nbsp</button></div>
+      
+    </div>
+      <div class="container" style="display: none">
+       
+        
+      <div class="all">
+    <div class="chat_index">
+        <div class="chat_banner">
+          <div class="name">
+          聊天室(<span id="number">0</span>)
+        </div>
+        </div>
+        <div class="chat_body">
+            <!--在线列表-->
+            <div class="chat_online">
+                <!--搜索-->
+                <div class="search_online">
+                    <form>
+                        <input type="text" placeholder="搜索联系人">
+                    </form>
+                </div>
+                <div class="online_friend">
+                    <ul>
+                       
+                    </ul>
+                </div>
+ 
+            </div>
+            <!--聊天界面-->
+            <div class="chat_main">
+                <div class="box-bd">
+                
+                </div>
+                <div class="send_message">
+                     <input type="text" placeholder="请输入消息" id="send_txt">
+                        <input type="button" value="发送" id="send_btn">
+                </div>
+            </div>
+            <!--名片-->
+            <div class="chat_namecard">
+            
+       
+        <div class="msg">
+          <img src="images/卡通头像2.jpg" class="msg_img">
+          <div class="msg_text">天狼星</div>
+         </div>
+   </div>
+          
+                                 
+            </div>
+        </div>
+ 
+    </div>
+</div>
+
+
+      </div>
+    <script src="/socket.io/socket.io.js"> </script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    </body>
+</html>
